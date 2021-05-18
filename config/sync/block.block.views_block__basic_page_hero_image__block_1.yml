@@ -1,0 +1,37 @@
+uuid: a297f687-3d72-494a-bf3c-0c9fa3232342
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.basic_page_hero_image_
+  module:
+    - block_class
+    - node
+    - views
+  theme:
+    - southernwall
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__basic_page_hero_image__block_1
+theme: southernwall
+region: hero_slider
+weight: 0
+provider: null
+plugin: 'views_block:basic_page_hero_image_-block_1'
+settings:
+  id: 'views_block:basic_page_hero_image_-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

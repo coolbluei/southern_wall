@@ -1,0 +1,15 @@
+uuid: c111bccb-97ce-4cde-8972-0dfe05bb569c
+langcode: en
+status: true
+dependencies: {  }
+name: 480widthscale
+label: 480WidthScale
+effects:
+  9f40a6f5-2dd8-41c5-bf13-ce15525b9a11:
+    uuid: 9f40a6f5-2dd8-41c5-bf13-ce15525b9a11
+    id: image_scale
+    weight: 1
+    data:
+      width: 480
+      height: null
+      upscale: true

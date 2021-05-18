@@ -1,0 +1,15 @@
+uuid: 9aa39592-f47a-4ea7-a732-aa0a4c9c6f3b
+langcode: en
+status: true
+dependencies: {  }
+name: 460x288scalecrop
+label: 460X288ScaleCrop
+effects:
+  e16d1c00-057e-49b3-8aef-5168c7561545:
+    uuid: e16d1c00-057e-49b3-8aef-5168c7561545
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 460
+      height: 288
+      anchor: center-center

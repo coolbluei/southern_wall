@@ -1,0 +1,15 @@
+uuid: da69e95d-a8db-4d81-b50b-48faf5de1961
+langcode: en
+status: true
+dependencies: {  }
+name: 425x266scalecrop
+label: 425x266ScaleCrop
+effects:
+  b68b98a8-5462-4609-8d6e-8b1a5aff13e5:
+    uuid: b68b98a8-5462-4609-8d6e-8b1a5aff13e5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 425
+      height: 266
+      anchor: center-center

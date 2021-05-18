@@ -1,0 +1,21 @@
+uuid: c501343f-f6ea-4639-83ce-26c2812859d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caption
+    - node.type.main_slider
+  module:
+    - text
+id: node.main_slider.field_caption
+field_name: field_caption
+entity_type: node
+bundle: main_slider
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

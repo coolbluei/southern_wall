@@ -1,0 +1,22 @@
+uuid: 88cca3fb-a20d-43e3-b8f9-749dc4ff83f8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - southernwall
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: southernwall_local_tasks
+theme: southernwall
+region: content
+weight: -11
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

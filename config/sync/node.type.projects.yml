@@ -1,0 +1,17 @@
+uuid: 4bc71943-7d26-4009-aad8-6ab52db81c7e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Projects
+type: projects
+description: 'Projects begin executed or finished by SWS.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

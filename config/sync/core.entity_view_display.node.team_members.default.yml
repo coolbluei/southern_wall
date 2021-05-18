@@ -1,0 +1,87 @@
+uuid: a404eef8-1bd4-4c2f-b082-a1dc1801e8e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.team_members.body
+    - field.field.node.team_members.field_disable_bio
+    - field.field.node.team_members.field_expertise
+    - field.field.node.team_members.field_first_name
+    - field.field.node.team_members.field_last_name
+    - field.field.node.team_members.field_location
+    - field.field.node.team_members.field_middle_name
+    - field.field.node.team_members.field_position
+    - field.field.node.team_members.field_team_image
+    - field.field.node.team_members.field_weight
+    - image.style.480widthscale
+    - node.type.team_members
+  module:
+    - image
+    - text
+    - user
+id: node.team_members.default
+targetEntityType: node
+bundle: team_members
+mode: default
+content:
+  body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_disable_bio:
+    weight: 6
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_location:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_position:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_team_image:
+    type: image
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      image_style: 480widthscale
+      image_link: ''
+    third_party_settings: {  }
+  field_weight:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_expertise: true
+  field_first_name: true
+  field_last_name: true
+  field_middle_name: true

@@ -1,0 +1,15 @@
+uuid: 4123db81-02d1-4a82-b62a-32a7031eb338
+langcode: en
+status: true
+dependencies: {  }
+name: 355x190scalecrop
+label: 355X190ScaleCrop
+effects:
+  20b0a73e-f3aa-4352-a861-abb1cca4c668:
+    uuid: 20b0a73e-f3aa-4352-a861-abb1cca4c668
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 355
+      height: 190
+      anchor: center-center

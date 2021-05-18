@@ -1,0 +1,27 @@
+uuid: f65c5fb9-2358-4ca6-b3ff-3c203003a208
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - southernwall
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: southernwall_content
+theme: southernwall
+region: content
+weight: -9
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

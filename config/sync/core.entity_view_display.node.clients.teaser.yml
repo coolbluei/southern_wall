@@ -1,0 +1,24 @@
+uuid: 7f79f2cd-1dac-40ed-b4f8-237650c22d10
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.clients.field_client_logo
+    - field.field.node.clients.field_client_web_url
+    - node.type.clients
+  module:
+    - user
+id: node.clients.teaser
+targetEntityType: node
+bundle: clients
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_client_logo: true
+  field_client_web_url: true

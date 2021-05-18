@@ -1,0 +1,22 @@
+uuid: ed6f5e76-8837-4854-92ef-518022ce98d8
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - southernwall
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: southernwall_breadcrumbs
+theme: southernwall
+region: navigation
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: db782c6c-92b6-44af-bc2e-bbae1d7dc3ff
+langcode: en
+status: true
+dependencies: {  }
+name: 290x290scalcrop
+label: 290x290ScalCrop
+effects:
+  97acc488-c97e-4447-bec3-77b43fb36a50:
+    uuid: 97acc488-c97e-4447-bec3-77b43fb36a50
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 290
+      height: 290
+      anchor: center-center

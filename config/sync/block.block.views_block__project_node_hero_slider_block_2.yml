@@ -1,0 +1,37 @@
+uuid: 6afd3b6f-c831-466a-8cef-105bc2aa3a2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.project_node_hero_slider
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - southernwall
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__project_node_hero_slider_block_2
+theme: southernwall
+region: hero_slider
+weight: -10
+provider: null
+plugin: 'views_block:project_node_hero_slider-block_2'
+settings:
+  id: 'views_block:project_node_hero_slider-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      projects: projects
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

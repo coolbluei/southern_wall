@@ -1,0 +1,22 @@
+uuid: 1d70188b-1557-4c55-af58-049d40199e6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - southernwall
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: southernwall_help
+theme: southernwall
+region: content
+weight: -13
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

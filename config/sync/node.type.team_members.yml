@@ -1,0 +1,17 @@
+uuid: 09dcffc4-dc0a-4139-8a26-e99a8729b9ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Team members'
+type: team_members
+description: 'List of highly qualified team members working for SWS.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

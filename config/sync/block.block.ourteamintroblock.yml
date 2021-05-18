@@ -1,0 +1,35 @@
+uuid: db805c64-b462-4055-bfd5-0f1e2111ccdd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ea7fca03-4874-4f91-8a7b-d4b296f61d63'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - southernwall
+third_party_settings:
+  block_class:
+    classes: intro-block
+id: ourteamintroblock
+theme: southernwall
+region: content_top
+weight: 0
+provider: null
+plugin: 'block_content:ea7fca03-4874-4f91-8a7b-d4b296f61d63'
+settings:
+  id: 'block_content:ea7fca03-4874-4f91-8a7b-d4b296f61d63'
+  label: 'Our team intro block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /our-team
+    negate: false
+    context_mapping: {  }

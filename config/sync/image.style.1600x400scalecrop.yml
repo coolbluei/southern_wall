@@ -1,0 +1,15 @@
+uuid: e5e78aea-5159-439d-9edf-fea070c832bf
+langcode: en
+status: true
+dependencies: {  }
+name: 1600x400scalecrop
+label: 1600x400ScaleCrop
+effects:
+  176f4ac8-2eba-4821-818b-a06b0c605ed8:
+    uuid: 176f4ac8-2eba-4821-818b-a06b0c605ed8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 400
+      anchor: center-center

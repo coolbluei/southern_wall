@@ -1,0 +1,21 @@
+uuid: 99144bdc-65a9-47af-9c56-9f72cbbe556b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_more_details
+    - node.type.projects
+  module:
+    - text
+id: node.projects.field_more_details
+field_name: field_more_details
+entity_type: node
+bundle: projects
+label: 'More details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

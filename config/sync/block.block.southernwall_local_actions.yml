@@ -1,0 +1,20 @@
+uuid: 5a9c8410-3072-47fd-9d13-398ce5e442e4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - southernwall
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: southernwall_local_actions
+theme: southernwall
+region: content
+weight: -12
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

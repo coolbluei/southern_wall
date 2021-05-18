@@ -1,0 +1,8 @@
+uuid: 0d2ed3f1-1c7f-4c09-97c8-c92c2921f09c
+langcode: en
+status: true
+dependencies: {  }
+id: node__clients
+label: 'Content: Clients'
+tags:
+  robots: 'noindex, nofollow, nosnippet, noydir, noimageindex, notranslate'

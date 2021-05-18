@@ -1,0 +1,15 @@
+uuid: 98033684-7cc7-43ac-9e03-58a186eb8d90
+langcode: en
+status: true
+dependencies: {  }
+name: 480x480scalecrop
+label: 480x480ScaleCrop
+effects:
+  eb3b1fcc-0ee9-4be5-9340-25de6ecb8ffa:
+    uuid: eb3b1fcc-0ee9-4be5-9340-25de6ecb8ffa
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 480
+      anchor: center-center

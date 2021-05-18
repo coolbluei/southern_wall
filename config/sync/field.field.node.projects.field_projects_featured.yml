@@ -1,0 +1,23 @@
+uuid: e3a59703-de96-4282-bb14-e3e2893f4d96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_projects_featured
+    - node.type.projects
+id: node.projects.field_projects_featured
+field_name: field_projects_featured
+entity_type: node
+bundle: projects
+label: Featured
+description: 'Check this field to make this project as featured one in /projects page'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

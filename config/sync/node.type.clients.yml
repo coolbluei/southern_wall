@@ -1,0 +1,17 @@
+uuid: dc3f0f86-0329-47f4-95c9-811ef5e369ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Clients
+type: clients
+description: 'Clients associated with SWS.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

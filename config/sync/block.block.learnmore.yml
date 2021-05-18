@@ -1,0 +1,29 @@
+uuid: 6682b761-6444-4f30-b9ef-82c768f2b936
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:739235ba-d673-4acc-8b05-886a8894e3e6'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - southernwall
+third_party_settings:
+  block_class:
+    classes: footer-learn-more
+id: learnmore
+theme: southernwall
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:739235ba-d673-4acc-8b05-886a8894e3e6'
+settings:
+  id: 'block_content:739235ba-d673-4acc-8b05-886a8894e3e6'
+  label: 'Footer learn more'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

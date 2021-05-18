@@ -1,0 +1,29 @@
+uuid: bcffc54f-9814-4eb7-9bd2-170b2bf070df
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d9c721f9-c2bf-4f1e-ba98-2177b0be1a3d'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - southernwall
+third_party_settings:
+  block_class:
+    classes: footer-copy-right
+id: footercopyright
+theme: southernwall
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:d9c721f9-c2bf-4f1e-ba98-2177b0be1a3d'
+settings:
+  id: 'block_content:d9c721f9-c2bf-4f1e-ba98-2177b0be1a3d'
+  label: 'Footer copy right'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

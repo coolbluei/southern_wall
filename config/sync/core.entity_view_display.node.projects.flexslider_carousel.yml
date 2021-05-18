@@ -1,0 +1,51 @@
+uuid: 7c7b2d59-c623-4092-a7ca-09f5e4787f0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.flexslider_carousel
+    - field.field.node.projects.body
+    - field.field.node.projects.field_featured_image
+    - field.field.node.projects.field_hero_image
+    - field.field.node.projects.field_location
+    - field.field.node.projects.field_more_details
+    - field.field.node.projects.field_project_industry
+    - field.field.node.projects.field_projects_featured
+    - field.field.node.projects.field_services_provided
+    - field.field.node.projects.field_state
+    - field.field.node.projects.field_team_members
+    - node.type.projects
+    - responsive_image.styles.project_gallery
+  module:
+    - ds
+    - flexslider_fields
+    - user
+id: node.projects.flexslider_carousel
+targetEntityType: node
+bundle: projects
+mode: flexslider_carousel
+content:
+  field_hero_image:
+    type: flexslider_responsive
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      optionset: flexslider_carousel
+      responsive_image_style: project_gallery
+      caption: '0'
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+hidden:
+  body: true
+  field_featured_image: true
+  field_location: true
+  field_more_details: true
+  field_project_industry: true
+  field_projects_featured: true
+  field_services_provided: true
+  field_state: true
+  field_team_members: true
+  links: true

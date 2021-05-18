@@ -1,0 +1,31 @@
+uuid: cc97a67b-2536-4714-b0df-5eabdabb8657
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.services.field_featured_image
+    - field.field.taxonomy_term.services.field_hero_image
+    - field.field.taxonomy_term.services.field_service_experts
+    - field.field.taxonomy_term.services.field_tear_sheets_pdfs
+    - field.field.taxonomy_term.services.field_teaser
+    - taxonomy.vocabulary.services
+  module:
+    - text
+id: taxonomy_term.services.default
+targetEntityType: taxonomy_term
+bundle: services
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_featured_image: true
+  field_hero_image: true
+  field_service_experts: true
+  field_tear_sheets_pdfs: true
+  field_teaser: true

@@ -1,0 +1,19 @@
+uuid: ef827142-0c5c-427a-b354-e5943f52898e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_phone
+    - taxonomy.vocabulary.locations
+id: taxonomy_term.locations.field_phone
+field_name: field_phone
+entity_type: taxonomy_term
+bundle: locations
+label: Phone
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

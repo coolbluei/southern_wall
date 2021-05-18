@@ -1,0 +1,30 @@
+uuid: 0626a8d9-333b-4227-9908-36c3f9221b72
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_page_projects
+  module:
+    - system
+    - views
+  theme:
+    - southernwall
+id: views_block__home_page_projects_block_1
+theme: southernwall
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:home_page_projects-block_1'
+settings:
+  id: 'views_block:home_page_projects-block_1'
+  label: 'Featured Projects'
+  provider: views
+  label_display: '0'
+  views_label: 'Featured Projects'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

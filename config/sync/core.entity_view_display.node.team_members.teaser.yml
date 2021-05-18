@@ -1,0 +1,40 @@
+uuid: b6c24362-a7cb-424a-b68c-1811a5e85530
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.team_members.body
+    - field.field.node.team_members.field_disable_bio
+    - field.field.node.team_members.field_expertise
+    - field.field.node.team_members.field_first_name
+    - field.field.node.team_members.field_last_name
+    - field.field.node.team_members.field_location
+    - field.field.node.team_members.field_middle_name
+    - field.field.node.team_members.field_position
+    - field.field.node.team_members.field_team_image
+    - field.field.node.team_members.field_weight
+    - node.type.team_members
+  module:
+    - user
+id: node.team_members.teaser
+targetEntityType: node
+bundle: team_members
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_disable_bio: true
+  field_expertise: true
+  field_first_name: true
+  field_last_name: true
+  field_location: true
+  field_middle_name: true
+  field_position: true
+  field_team_image: true
+  field_weight: true

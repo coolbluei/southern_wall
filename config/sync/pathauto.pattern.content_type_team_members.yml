@@ -1,0 +1,22 @@
+uuid: 80660f1b-c78f-48be-89cd-237da753721d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_type_team_members
+label: 'Content type-Team members'
+type: 'canonical_entities:node'
+pattern: 'people/[node:title]'
+selection_criteria:
+  f828c84a-34b1-4fe7-a27b-29b571f05317:
+    id: node_type
+    bundles:
+      team_members: team_members
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f828c84a-34b1-4fe7-a27b-29b571f05317
+selection_logic: and
+weight: -5
+relationships: {  }

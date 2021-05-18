@@ -1,0 +1,29 @@
+uuid: 99c696bc-08f6-4b19-88f6-92494c3abf1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.services_details_page_title
+  module:
+    - block_class
+    - views
+  theme:
+    - southernwall
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__services_details_page_title_block_1
+theme: southernwall
+region: content
+weight: -10
+provider: null
+plugin: 'views_block:services_details_page_title-block_1'
+settings:
+  id: 'views_block:services_details_page_title-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

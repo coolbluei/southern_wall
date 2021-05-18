@@ -1,0 +1,10 @@
+uuid: f71eb789-9e5d-4366-872f-83de4cafa495
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.flexslider_main
+label: 'Flexslider Main'
+targetEntityType: node
+cache: true

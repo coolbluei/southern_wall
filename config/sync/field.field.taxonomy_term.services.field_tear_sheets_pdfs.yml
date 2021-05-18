@@ -1,0 +1,27 @@
+uuid: 406755f1-37e5-4c23-96ad-fedb15e5184d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_tear_sheets_pdfs
+    - taxonomy.vocabulary.services
+  module:
+    - file
+id: taxonomy_term.services.field_tear_sheets_pdfs
+field_name: field_tear_sheets_pdfs
+entity_type: taxonomy_term
+bundle: services
+label: 'Tear sheets & PDFs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf doc docx jpg png'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

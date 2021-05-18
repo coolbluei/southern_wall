@@ -1,0 +1,21 @@
+uuid: c5b6252f-a1a1-4754-aee7-7b129ca8dea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_google_map
+    - taxonomy.vocabulary.locations
+  module:
+    - google_map_field
+id: taxonomy_term.locations.field_google_map
+field_name: field_google_map
+entity_type: taxonomy_term
+bundle: locations
+label: 'Google Map'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: google_map_field

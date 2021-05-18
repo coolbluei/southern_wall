@@ -1,0 +1,10 @@
+uuid: 63c3f0e2-eeac-41a8-9ae5-0852529f2d0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.flexslider_carousel
+label: 'Flexslider carousel'
+targetEntityType: node
+cache: true

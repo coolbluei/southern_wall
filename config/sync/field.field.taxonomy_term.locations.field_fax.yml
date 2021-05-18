@@ -1,0 +1,19 @@
+uuid: a5cf1af8-af96-4135-bc6c-5bf105122ade
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_fax
+    - taxonomy.vocabulary.locations
+id: taxonomy_term.locations.field_fax
+field_name: field_fax
+entity_type: taxonomy_term
+bundle: locations
+label: Fax
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

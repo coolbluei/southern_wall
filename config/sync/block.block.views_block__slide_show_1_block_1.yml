@@ -1,0 +1,30 @@
+uuid: e45cbec6-ee2f-46c1-b84c-be10ec018a64
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slide_show_1
+  module:
+    - system
+    - views
+  theme:
+    - southernwall
+id: views_block__slide_show_1_block_1
+theme: southernwall
+region: hero_slider
+weight: -13
+provider: null
+plugin: 'views_block:slide_show_1-block_1'
+settings:
+  id: 'views_block:slide_show_1-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

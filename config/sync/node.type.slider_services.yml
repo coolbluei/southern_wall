@@ -1,0 +1,18 @@
+uuid: 8187b234-613c-4b83-885d-70f602c580f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Slider services'
+type: slider_services
+description: 'This content type will render slider on Services listing page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

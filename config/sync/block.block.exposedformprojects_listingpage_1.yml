@@ -1,0 +1,24 @@
+uuid: 5443844f-5a08-4da2-b477-fad6efc2e9c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.projects_listing
+  module:
+    - block_class
+    - views
+  theme:
+    - southernwall
+id: exposedformprojects_listingpage_1
+theme: southernwall
+region: disabled
+weight: -9
+provider: null
+plugin: 'views_exposed_filter_block:projects_listing-page_1'
+settings:
+  id: 'views_exposed_filter_block:projects_listing-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

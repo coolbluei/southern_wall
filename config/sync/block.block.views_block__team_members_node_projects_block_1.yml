@@ -1,0 +1,37 @@
+uuid: ab738fcc-6987-4f6f-bb37-8e6b046da0fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.team_members_node_projects
+  module:
+    - block_class
+    - node
+    - views
+  theme:
+    - southernwall
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__team_members_node_projects_block_1
+theme: southernwall
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:team_members_node_projects-block_1'
+settings:
+  id: 'views_block:team_members_node_projects-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      team_members: team_members
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

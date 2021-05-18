@@ -1,0 +1,15 @@
+uuid: 3d80a2a9-dfc0-4c7d-af50-b7f8c57002ed
+langcode: en
+status: true
+dependencies: {  }
+name: maxheight_325
+label: MaxHeight-325
+effects:
+  d2ff3686-26a3-43e7-a8c0-274a4f29e016:
+    uuid: d2ff3686-26a3-43e7-a8c0-274a4f29e016
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 325
+      upscale: true

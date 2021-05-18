@@ -1,0 +1,86 @@
+uuid: 56f8d21a-9985-413a-9d82-44264906efe7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.services.field_featured_image
+    - field.field.taxonomy_term.services.field_hero_image
+    - field.field.taxonomy_term.services.field_service_experts
+    - field.field.taxonomy_term.services.field_tear_sheets_pdfs
+    - field.field.taxonomy_term.services.field_teaser
+    - image.style.thumbnail
+    - taxonomy.vocabulary.services
+  module:
+    - image
+    - path
+    - text
+id: taxonomy_term.services.default
+targetEntityType: taxonomy_term
+bundle: services
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_featured_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_hero_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_service_experts:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_teaser:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+hidden:
+  field_tear_sheets_pdfs: true

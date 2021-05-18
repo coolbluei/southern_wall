@@ -1,0 +1,28 @@
+uuid: 5fa6f221-ddfe-46e5-a7f1-be436537b3e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_service_experts
+    - node.type.team_members
+    - taxonomy.vocabulary.services
+id: taxonomy_term.services.field_service_experts
+field_name: field_service_experts
+entity_type: taxonomy_term
+bundle: services
+label: 'Service Experts'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      team_members: team_members
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

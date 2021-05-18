@@ -1,0 +1,25 @@
+uuid: 760ea231-cfa8-473c-9233-f1cfecea58df
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: services_hero_slider
+label: 'Services hero slider'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      slider_services: slider_services
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 7
+  act_as_queue: false
+  reverse: false

@@ -1,0 +1,15 @@
+uuid: d6f3464e-7778-466a-af66-73df64fb42f6
+langcode: en
+status: true
+dependencies: {  }
+name: 400x250scalcrop
+label: 400x250ScalCrop
+effects:
+  8e65e421-c590-45cc-aa31-7ef52ab4ef49:
+    uuid: 8e65e421-c590-45cc-aa31-7ef52ab4ef49
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 250
+      anchor: center-center

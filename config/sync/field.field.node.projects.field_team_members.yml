@@ -1,0 +1,31 @@
+uuid: 4991f36f-4bd6-4ce2-9938-a950d3b1f278
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_members
+    - node.type.projects
+    - paragraphs.paragraphs_type.team_member
+  module:
+    - entity_reference_revisions
+id: node.projects.field_team_members
+field_name: field_team_members
+entity_type: node
+bundle: projects
+label: 'Project Management'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      team_member: team_member
+    target_bundles_drag_drop:
+      team_member:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

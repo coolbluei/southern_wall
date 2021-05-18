@@ -1,0 +1,34 @@
+uuid: d437accc-302d-4bdb-9a92-23f188a905aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.our_clients
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - southernwall
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__our_clients_block_1
+theme: southernwall
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:our_clients-block_1'
+settings:
+  id: 'views_block:our_clients-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '40'
+visibility:
+  request_path:
+    id: request_path
+    pages: /our-clients
+    negate: false
+    context_mapping: {  }

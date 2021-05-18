@@ -1,0 +1,21 @@
+uuid: f9f9fa13-cb9f-4eb0-b642-48cea2bc90cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_alt_text
+    - node.type.main_slider
+  module:
+    - text
+id: node.main_slider.field_alt_text
+field_name: field_alt_text
+entity_type: node
+bundle: main_slider
+label: 'Alt Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

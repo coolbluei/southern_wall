@@ -1,0 +1,23 @@
+uuid: 41cd7adf-16c2-48b6-b79b-6aedd2dee705
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - taxonomy
+id: taxonomy_term.field_tear_sheets_pdfs
+field_name: field_tear_sheets_pdfs
+entity_type: taxonomy_term
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

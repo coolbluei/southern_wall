@@ -1,0 +1,23 @@
+uuid: 97cb0efd-fd66-431c-8a6d-8fd57db6dd8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video_slide
+    - node.type.main_slider
+id: node.main_slider.field_video_slide
+field_name: field_video_slide
+entity_type: node
+bundle: main_slider
+label: 'Video slide'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
