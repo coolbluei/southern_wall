@@ -1,0 +1,21 @@
+name: sws
+recipe: drupal8
+config:
+  php: '7.4'
+  via: nginx
+  webroot: web
+  xdebug: true
+services:
+  pma:
+    type: phpmyadmin
+  node:
+    type: node
+    globals:
+      gulp-cli: "latest"
+tooling:
+  node:
+    service: 'node'
+  npm:
+    service: 'node'
+  gulp:
+    service: 'node'
