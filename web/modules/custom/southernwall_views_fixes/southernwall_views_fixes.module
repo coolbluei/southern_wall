@@ -1,0 +1,18 @@
+<?php
+/**
+ * Implements hook_form_alter().
+ * Altering views exposed filter for project listing page
+ * to show all featured and non-featured projects irrespective of the featured value selected
+ */
+
+function southernwall_views_fixes_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form['#id'] == 'views-exposed-form-projects-listing-page-1' && $form_id == 'views_exposed_form') {
+    $form['#validate'][] = 'project_listing_exposed_validate';
+  }
+}
+function project_listing_exposed_validate ($form, \Drupal\Core\Form\FormStateInterface $form_state){
+  if ($form_state->getValue('field_project_industry_target_id') != 'All' || $form_state->getValue('field_services_provided_target_id') != 'All' || $form_state->getValue('field_location_target_id') != 'All') {
+  $form_state->setValue('field_projects_featured_value', 'All');
+     
+  }
+}

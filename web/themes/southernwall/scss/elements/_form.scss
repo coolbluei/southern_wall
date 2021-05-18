@@ -1,0 +1,52 @@
+/*  .contact form location list page */
+form {
+	.form-control {
+		height: 42px;
+		box-shadow: none;
+		border-color: $theme-border-grey;
+	}
+}
+
+.select-wrapper:after {
+	color: $theme-dark-blue;
+}
+
+#block-webform {
+	form {
+		max-width: 600px;
+		margin: 0 auto;
+		padding-top: 30px;
+		.form-item {
+			@include clearfix;
+			>label {
+				float: left;
+				width: 24%;
+				padding-right: 15px;
+				font-weight: normal;
+				@include mobilexs(){
+					width: 100%;
+					padding-right: 0;
+				}
+			}
+			>.form-control, >.select-wrapper, >.form-textarea-wrapper {
+				width: 76%;
+				float: left;
+				@include mobilexs(){
+					width: 100%;
+				}
+			}
+		}
+		#edit-actions {
+			float: right;
+			width: 76%;
+			text-align: center;
+			@include mobilexs(){
+				width: 100%;
+			}
+			.button {
+				@extend .primary-btn;
+				margin-top: 30px;
+			}
+		}
+	}
+}

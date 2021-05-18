@@ -1,0 +1,358 @@
+/* theme vertical margin */
+$theme_vert_space: 50px;
+
+@media (max-width: 767px) {
+	$theme_vert_space: 30px;
+}
+
+.content_block_margin {
+	margin: 52px 0 30px;
+}
+
+.featured-views-display{
+  .projects-tag-types{
+    a{
+      color: $primary-grey;
+    }
+  }
+	.view-header {
+		position: relative;
+		.view-all-header-link {
+			position: absolute;
+			right: 0;
+			top: 12px;
+			font-size: 14px;
+			@include mobile(){
+				position: relative;
+				top: -10px;
+			}
+		}
+	}
+	.view-content {
+		.row {
+			> div[class*="col-"]:not(.projects-tag-types){
+				margin-bottom: 30px;
+				@include desktop(){
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+				@include desktop(){
+					margin-bottom: 0;
+				}
+				img {
+					width: 100%;
+				}
+			}
+      .col {
+        .views-field {
+          &:not(.views-field-nothing){
+            cursor: pointer;
+          }
+          &.no-link-wrapper{
+            cursor: default;
+          }
+        }
+        &:hover{
+          .featured-view-title a{
+            background-color: $theme-dark-blue;
+            text-decoration: none;
+          }
+        }
+      }
+		}
+	}
+
+	.featured-view-title {
+		display: block;
+		a {
+			font-size: 24px;
+			display: block;
+			background-color: $primary-grey;
+			color: #FFF;
+			text-align: center;
+			padding: 16px 0;
+			&:hover {
+				background-color: $theme-dark-blue;
+				text-decoration: none;
+			}
+		}
+    span {
+			font-size: 24px;
+			display: block;
+			background-color: $primary-grey;
+			color: #FFF;
+			text-align: center;
+			padding: 16px 0;
+		}
+	}
+
+	.views-field-field-featured-image, .views-field-field-team-image {
+		margin-bottom: 12px;
+	}
+	.views-field-body, .views-field-field-featured-image + div p,
+	.views-field-field-team-image + div{
+		text-align: center;
+	}
+
+}
+
+.view-service-taxonomy-display, .view-services-details-page-sws-experts {
+	@extend .featured-views-display;
+}
+.view-service-taxonomy-display{
+  .row{
+    > .col{
+      margin-bottom:15px !important;
+    }
+  }
+}
+
+/* .........  content type nodes ...........*/
+.page-node-type-projects {
+	.main-container article {
+		.field--name-body, .field--name-field-team-members, .field--name-field-more-details {
+			.field--label {
+				font-size: 30px;
+				border-bottom: solid 1px $theme-border-grey;
+				padding-bottom: 15px;
+				margin: 50px 0 30px;
+				@include mobile(){
+					margin: 30px 0 15px;
+				}
+			}
+		}
+		.field--name-body {
+			margin-bottom: 40px;
+		}
+		.field--name-field-more-details {
+			.video-embed-field-responsive-video {
+				margin-top: 30px;
+			}
+		}
+		.field--name-field-services-provided,
+	  .field--name-field-project-industry,
+		.field--name-field-location,
+		.field--name-field-state {
+			text-align: center;
+			padding: 15px 0;
+			background-color: $theme-light-bg;
+			margin: 0;
+			div {
+				display: inline-block;
+				margin: 0 5px;
+			}
+			@media (min-width: 768px) {
+				float: left;
+				width: 31%;
+				margin: 0 1% 55px;
+			}
+			@include mobile(){
+				margin-bottom: 30px;
+			}
+		}
+		.field--name-field-team-members {
+			@media (min-width: 992px) {
+				margin-bottom: 65px;
+			}
+			.field--items {
+				&:after {
+					content: "";
+					display: table;
+					clear: both;
+				}
+				>.field--item {
+					text-align: center;
+					padding: 15px 15px;
+					margin: 0 0 30px;
+					@include mobile(){
+						padding: 0;
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+					>div {
+						background-color: $theme-light-bg;
+						padding: 15px 0;
+					}
+					@media (min-width: 767px) {
+						float: left;
+						width: 33.3333%;
+						margin: 0;
+					}
+				}
+				.field--name-field-team-member {
+					font-size: 24px;
+					margin-bottom: 8px;
+
+				}
+			}
+		}
+	}
+}
+
+.view-our-services, .view-our-team, .view-projects-listing {
+	.view-content .views-view-grid {
+		>.row {
+			> div[class*="col-"] {
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+
+.view-projects-listing {
+	padding-top: $theme_vert_space;
+}
+
+.page-node-type-team-members {
+	article.team-members {
+		padding-top: $theme_vert_space;
+		@include mobile(){
+			padding-top: 30px;
+		}
+		.field--name-body {
+			border-top: solid 1px $theme-border-grey;
+			margin-top: 40px;
+			padding-top: 40px;
+		}
+		.content {
+			.col-sm-6 {
+				img {
+					margin: 0 auto;
+				}
+				h2.spl-title  {
+					font-size: 42px;
+					margin: 0 0 24px;
+					text-align: center;
+					@media (min-width: 1200px) {
+						margin-top: 52px;
+					}
+					@include mobile(){
+						margin-bottom: 15px;
+					}
+				}
+				.spl-text-1 {
+					font-size: 22px;
+					margin-bottom: 10px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+.view-project-node-hero-slider {
+	position: relative;
+	.project-node-slider-text {
+		position: absolute;
+		top: 150px;
+		left: 50px;
+		z-index: 999;
+		font-size: 24px;
+		color: #FFF;
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+		h1 {
+			color: #FFF;
+			font-size: 38px;
+		}
+		a {
+			color: #FFF;
+		}
+		@include mobile() {
+			top: 60px;
+			left: 15px;
+			font-size: 16px;
+			h2 {
+				font-size:24px;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.non-transparent-nav {
+	.view-project-node-hero-slider {
+		.project-node-slider-text {
+			display: none;
+		}
+	}
+}
+
+article.flexslider-carousel {
+	margin-top: 30px;
+	/*margin-bottom: 50px;*/
+	ul.slides {
+		>li {
+			cursor: pointer;
+			&.flex-active-slide {
+				opacity: 0.5;
+				cursor: default;
+			}
+		}
+	}
+}
+
+/* .........  view location listing ........ */
+
+.view-contact-us-locations-listing {
+	.views-view-grid {
+		>div.row {
+			margin-bottom: 30px;
+			@include tabs(){
+				&:last-child {
+					margin-bottom: 0;
+					.location-btn-link a {
+						margin-bottom: 0;
+					}
+				}
+			}
+			@include mdscreens(){
+				.col-md-12.col-sm-12 {
+					padding-left: 100px;
+				}
+			}
+		}
+	}
+}
+
+.field--type-google-map-field {
+	@include mobile(){
+		margin-top: $theme_vert_space;
+	}
+	.field--label {
+		margin-bottom: 5px;
+	}
+}
+
+/* ...........  view view-our-clients ......... */
+.view-our-clients {
+	.col-lg-3 {
+		text-align: center;
+		img {
+			display: inline;
+		}
+	}
+}
+
+.view-taxonomy-details-page-hero-image {
+	img {
+		width: 100%;
+	}
+}
+
+.field--name-field-team-members {
+   clear: both;
+}
+.view-projects-in-a-location {
+  .views-row {
+      span {
+        display: inline-block;
+      }
+      .views-field-views-conditional-field {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+  }
+
+}

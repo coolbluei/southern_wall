@@ -1,0 +1,9 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+global-scripts:     
+  js:
+    js/southernwall.js: {}
+  dependencies:
+    - core/jquery

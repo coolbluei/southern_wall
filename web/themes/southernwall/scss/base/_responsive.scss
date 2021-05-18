@@ -1,0 +1,67 @@
+// Defines responsive styles for large desktop resolutions.
+@mixin large-desktop(){
+  @media only screen and (min-width:1420px){
+    @content;
+  }
+}
+
+// Defines responsive styles for desktop resolutions.
+@mixin desktop(){
+  @media only screen and (min-width:1200px){
+    @content;
+  }
+}
+
+// Defines responseive styles for medium screens resolutions.
+@mixin mdscreens(){
+  @media only screen and (min-width:992px){
+    @content;
+  }
+}
+
+// Defines responseive styles for tabs resolutions.
+@mixin tabs(){
+  @media only screen and (min-width:768px){ 
+    @content;
+  }
+}
+
+// Defines responseive styles for mobile resolutions.
+@mixin mobile(){
+  @media only screen and (max-width:767px){ 
+    @content;
+  }
+}
+
+// Defines responseive styles for mobile resolutions < 480.
+@mixin mobilexs(){
+  @media only screen and (max-width:479px){ 
+    @content;
+  }
+}
+
+// Clearfix Tool
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+img {max-width: 100%;}
+
+// Vendor Prefixing
+
+@mixin transform( $values... ) {
+  -webkit-transform: $values;
+  -moz-transform: $values;
+  -ms-transform: $values;
+  transform: $values;
+}
+@mixin transition( $values... ) {
+  -webkit-transition: $values;
+  -moz-transition: $values;
+  transition: $values;
+}
+
