@@ -21,8 +21,8 @@ plugin: 'block_content:d9c721f9-c2bf-4f1e-ba98-2177b0be1a3d'
 settings:
   id: 'block_content:d9c721f9-c2bf-4f1e-ba98-2177b0be1a3d'
   label: 'Footer copy right'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

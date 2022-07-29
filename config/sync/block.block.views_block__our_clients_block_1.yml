@@ -19,13 +19,13 @@ plugin: 'views_block:our_clients-block_1'
 settings:
   id: 'views_block:our_clients-block_1'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
   views_label: ''
   items_per_page: '40'
 visibility:
   request_path:
     id: request_path
-    pages: /our-clients
     negate: false
     context_mapping: {  }
+    pages: /our-clients

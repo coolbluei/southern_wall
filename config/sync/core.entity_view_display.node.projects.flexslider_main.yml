@@ -27,8 +27,6 @@ mode: flexslider_main
 content:
   field_hero_image:
     type: flexslider
-    weight: 0
-    region: content
     label: hidden
     settings:
       optionset: flexslider_main
@@ -38,14 +36,16 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
+    weight: 0
+    region: content
   field_location:
     type: entity_reference_label
-    weight: 1
-    region: content
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   body: true
   field_featured_image: true

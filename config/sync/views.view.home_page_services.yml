@@ -22,61 +22,12 @@ base_table: taxonomy_term_field_data
 base_field: tid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: none
-        options:
-          offset: 0
-      style:
-        type: views_bootstrap_grid
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          alignment: horizontal
-          columns: '3'
-          col_xs: col-xs-12
-          col_sm: col-sm-12
-          col_md: col-md-6
-          col_lg: col-lg-4
-          col_class_default: 1
-          row_class_default: 1
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+      title: 'Home Page Featured Services'
       fields:
         name:
           id: name
@@ -85,6 +36,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: name
+          plugin_id: term_name
           label: ''
           exclude: false
           alter:
@@ -141,9 +95,6 @@ display:
           separator: ', '
           field_api_classes: false
           convert_spaces: false
-          entity_type: taxonomy_term
-          entity_field: name
-          plugin_id: term_name
         field_featured_image:
           id: field_featured_image
           table: taxonomy_term__field_featured_image
@@ -151,6 +102,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -195,8 +147,10 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: 400x350scalecrop
             image_link: content
+            image_style: 400x350scalecrop
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -207,7 +161,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         field_teaser:
           id: field_teaser
           table: taxonomy_term__field_teaser
@@ -215,6 +168,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -269,7 +223,45 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
+      pager:
+        type: none
+        options:
+          offset: 0
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        weight:
+          id: weight
+          table: taxonomy_term_field_data
+          field: weight
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: weight
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: weight
+          exposed: false
+      arguments: {  }
       filters:
         vid:
           id: vid
@@ -278,6 +270,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: vid
+          plugin_id: bundle
           operator: in
           value:
             services: services
@@ -289,6 +284,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -296,8 +293,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -310,9 +305,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: taxonomy_term
-          entity_field: vid
-          plugin_id: bundle
         status:
           id: status
           table: taxonomy_term_field_data
@@ -320,6 +312,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: status
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -330,6 +325,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -338,8 +335,6 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -352,25 +347,42 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: taxonomy_term
-          entity_field: status
-          plugin_id: boolean
-      sorts:
-        weight:
-          id: weight
-          table: taxonomy_term_field_data
-          field: weight
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: taxonomy_term
-          entity_field: weight
-          plugin_id: standard
-      title: 'Home Page Featured Services'
+      style:
+        type: views_bootstrap_grid
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          alignment: horizontal
+          columns: '3'
+          col_xs: col-xs-12
+          col_sm: col-sm-12
+          col_md: col-md-6
+          col_lg: col-lg-4
+          col_class_default: 1
+          row_class_default: 1
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      css_class: featured-views-display
+      use_more: false
+      use_more_always: true
+      use_more_text: more
+      link_display: custom_url
+      link_url: /services
       header:
         area:
           id: area
@@ -379,23 +391,18 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: "<div class=\"block-title-wrapper\">\n<h2 class=\"block-title\">Services</h2>\n<a class=\"view-all-header-link\" href=\"/services\">View all Services</a>\n</div>"
-            format: full_html
           plugin_id: text
+          empty: false
+          content:
+            value: |-
+              <div class="block-title-wrapper">
+              <h2 class="block-title">Services</h2>
+              <a class="view-all-header-link" href="/services">View all Services</a>
+              </div>
+            format: full_html
+          tokenize: false
       footer: {  }
-      empty: {  }
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
-      use_more: false
-      use_more_always: true
-      use_more_text: more
-      link_url: /services
-      link_display: custom_url
-      css_class: featured-views-display
     cache_metadata:
       max-age: -1
       contexts:
@@ -406,14 +413,11 @@ display:
         - 'config:field.storage.taxonomy_term.field_featured_image'
         - 'config:field.storage.taxonomy_term.field_teaser'
   block_1:
-    display_plugin: block
     id: block_1
     display_title: Block
+    display_plugin: block
     position: 1
     display_options:
-      display_extenders:
-        metatag_display_extender: {  }
-      block_description: Services
       fields: {  }
       sorts: {  }
       filters:
@@ -424,6 +428,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: status
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -434,6 +441,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -442,8 +451,6 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -456,9 +463,9 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: taxonomy_term
-          entity_field: status
-          plugin_id: boolean
+      display_extenders:
+        metatag_display_extender: {  }
+      block_description: Services
     cache_metadata:
       max-age: -1
       contexts:

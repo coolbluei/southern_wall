@@ -18,15 +18,15 @@ plugin: 'views_block:project_node_hero_slider-block_1'
 settings:
   id: 'views_block:project_node_hero_slider-block_1'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      projects: projects
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      projects: projects

@@ -11,12 +11,12 @@ pattern: 'projects/[node:title]'
 selection_criteria:
   cf352765-aed5-470c-a9d2-e7192946269e:
     id: 'entity_bundle:node'
-    bundles:
-      projects: projects
     negate: false
+    uuid: cf352765-aed5-470c-a9d2-e7192946269e
     context_mapping:
       node: node
-    uuid: cf352765-aed5-470c-a9d2-e7192946269e
+    bundles:
+      projects: projects
 selection_logic: and
 weight: -5
 relationships: {  }
