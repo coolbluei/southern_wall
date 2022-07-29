@@ -43,6 +43,7 @@ module:
   image: 0
   imce: 0
   insert: 0
+  jquery_ui: 0
   kint: 0
   layout_discovery: 0
   libraries: 0
@@ -90,7 +91,6 @@ module:
   menu_link_content: 1
   pathauto: 1
   webform_bootstrap: 1
-  nodeorder: 5
   views: 10
   paragraphs: 11
   standard: 1000
