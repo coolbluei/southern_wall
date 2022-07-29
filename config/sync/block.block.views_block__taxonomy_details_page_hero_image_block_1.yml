@@ -9,9 +9,6 @@ dependencies:
     - views
   theme:
     - southernwall
-third_party_settings:
-  block_class:
-    classes: ''
 id: views_block__taxonomy_details_page_hero_image_block_1
 theme: southernwall
 region: hero_slider

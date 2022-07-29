@@ -9,9 +9,6 @@ dependencies:
     - views
   theme:
     - southernwall
-third_party_settings:
-  block_class:
-    classes: ''
 id: views_block__services_details_page_title_block_1
 theme: southernwall
 region: content

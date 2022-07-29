@@ -7,9 +7,6 @@ dependencies:
     - system
   theme:
     - southernwall
-third_party_settings:
-  block_class:
-    classes: ''
 id: southernwall_branding_white_logo
 theme: southernwall
 region: disabled

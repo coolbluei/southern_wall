@@ -94,7 +94,7 @@
             "web/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "web/themes/contrib/{$name}": [
+            "web/themes/{$name}": [
                 "type:drupal-theme"
             ],
             "drush/Commands/contrib/{$name}": [
