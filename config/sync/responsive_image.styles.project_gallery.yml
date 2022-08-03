@@ -12,34 +12,34 @@ id: project_gallery
 label: 'Project Gallery'
 image_style_mappings:
   -
-    breakpoint_id: bootstrap.screen-lg-min
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: 460x288scalecrop
-  -
     breakpoint_id: bootstrap.screen-lg-min
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: 460x288scalecrop
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 2x
   -
-    breakpoint_id: bootstrap.screen-md-max
-    multiplier: 1x
     image_mapping_type: image_style
     image_mapping: 425x266scalecrop
-  -
     breakpoint_id: bootstrap.screen-md-max
-    multiplier: 2x
+    multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: 425x266scalecrop
+    breakpoint_id: bootstrap.screen-md-max
+    multiplier: 2x
   -
+    image_mapping_type: image_style
+    image_mapping: 400x250scalcrop
     breakpoint_id: bootstrap.screen-sm-max
     multiplier: 1x
+  -
     image_mapping_type: image_style
     image_mapping: 400x250scalcrop
-  -
     breakpoint_id: bootstrap.screen-sm-max
     multiplier: 2x
-    image_mapping_type: image_style
-    image_mapping: 400x250scalcrop
 breakpoint_group: bootstrap
 fallback_image_style: 400x250scalcrop

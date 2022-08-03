@@ -22,14 +22,14 @@ plugin: 'block_content:ea7fca03-4874-4f91-8a7b-d4b296f61d63'
 settings:
   id: 'block_content:ea7fca03-4874-4f91-8a7b-d4b296f61d63'
   label: 'Our team intro block'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /our-team
     negate: false
     context_mapping: {  }
+    pages: /our-team

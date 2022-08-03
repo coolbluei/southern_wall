@@ -49,10 +49,6 @@ settings:
           items:
             - Source
   plugins:
-    language:
-      language_list: un
-    stylescombo:
-      styles: ''
     video_embed:
       defaults:
         children:

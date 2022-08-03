@@ -18,24 +18,24 @@ bundle: page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-  field_hero_image:
-    type: responsive_image
     weight: 0
     region: content
+  field_hero_image:
+    type: responsive_image
     label: above
     settings:
       responsive_image_style: ''
       image_link: ''
     third_party_settings: {  }
-  links:
-    weight: 1
+    weight: 0
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden: {  }

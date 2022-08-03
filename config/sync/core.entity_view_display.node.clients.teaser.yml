@@ -15,10 +15,10 @@ bundle: clients
 mode: teaser
 content:
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden:
   field_client_logo: true
   field_client_web_url: true

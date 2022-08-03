@@ -1,7 +1,14 @@
 uuid: 777bdde8-02c3-4ad1-baba-62bbd3e7e30c
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - filter
+    - search
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
@@ -11,6 +18,5 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'

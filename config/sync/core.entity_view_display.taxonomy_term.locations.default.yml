@@ -22,65 +22,69 @@ bundle: locations
 mode: default
 content:
   description:
-    label: hidden
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
   field_address:
-    weight: 1
+    type: address_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: address_default
+    weight: 1
     region: content
   field_email:
-    weight: 2
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 2
     region: content
   field_fax:
-    weight: 7
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 7
     region: content
   field_featured_image:
-    weight: 6
+    type: image
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 6
     region: content
   field_google_map:
-    weight: 3
+    type: google_map_field_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: google_map_field_default
+    weight: 3
     region: content
   field_hero_image:
-    weight: 4
+    type: image
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 4
     region: content
   field_phone:
-    weight: 5
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 5
     region: content
 hidden: {  }

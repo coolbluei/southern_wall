@@ -21,59 +21,61 @@ bundle: main_slider
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   field_alt_text:
-    weight: 104
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 104
     region: content
   field_caption:
-    weight: 103
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 103
     region: content
   field_slider_image:
-    weight: 105
+    type: image
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 105
     region: content
   field_video:
-    weight: 106
+    type: video_embed_field_video
     label: above
     settings:
+      autoplay: true
       responsive: true
       width: 854
       height: 480
-      autoplay: true
     third_party_settings: {  }
-    type: video_embed_field_video
+    weight: 106
     region: content
   field_video_slide:
-    weight: 107
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 107
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden: {  }

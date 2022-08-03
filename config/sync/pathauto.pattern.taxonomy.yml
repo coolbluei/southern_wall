@@ -12,6 +12,10 @@ pattern: '[term:vocabulary]/[term:name]'
 selection_criteria:
   04901c2f-7faa-4614-b4ba-3a8c7fd4ae05:
     id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 04901c2f-7faa-4614-b4ba-3a8c7fd4ae05
+    context_mapping:
+      taxonomy_term: taxonomy_term
     bundles:
       locations: locations
       position: position
@@ -19,10 +23,6 @@ selection_criteria:
       services: services
       states: states
       tags: tags
-    negate: false
-    context_mapping:
-      taxonomy_term: taxonomy_term
-    uuid: 04901c2f-7faa-4614-b4ba-3a8c7fd4ae05
 selection_logic: and
 weight: -5
 relationships: {  }

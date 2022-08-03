@@ -10,13 +10,13 @@ type: 'canonical_entities:node'
 pattern: 'projects/[node:title]'
 selection_criteria:
   cf352765-aed5-470c-a9d2-e7192946269e:
-    id: node_type
-    bundles:
-      projects: projects
+    id: 'entity_bundle:node'
     negate: false
+    uuid: cf352765-aed5-470c-a9d2-e7192946269e
     context_mapping:
       node: node
-    uuid: cf352765-aed5-470c-a9d2-e7192946269e
+    bundles:
+      projects: projects
 selection_logic: and
 weight: -5
 relationships: {  }

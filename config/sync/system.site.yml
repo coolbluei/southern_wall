@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: en
 uuid: 4f4f17b1-e17d-4f6a-8b04-d511b923746a
 name: 'Southern Wall Systems'
 mail: bmcewen@southernwall.com
@@ -8,8 +11,5 @@ page:
   front: /node
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
 mail_notification: ''

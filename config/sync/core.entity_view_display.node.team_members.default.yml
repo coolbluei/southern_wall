@@ -25,61 +25,63 @@ bundle: team_members
 mode: default
 content:
   body:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_disable_bio:
-    weight: 6
+    type: boolean
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    type: boolean
+    weight: 6
     region: content
   field_location:
     type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: hidden
-    settings:
-      link: false
-    third_party_settings: {  }
   field_position:
     type: entity_reference_label
-    weight: 4
-    region: content
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 4
+    region: content
   field_team_image:
     type: image
-    weight: 3
-    region: content
     label: hidden
     settings:
-      image_style: 480widthscale
       image_link: ''
+      image_style: 480widthscale
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_weight:
-    weight: 5
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 5
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_expertise: true
   field_first_name: true

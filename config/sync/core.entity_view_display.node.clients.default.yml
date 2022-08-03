@@ -16,29 +16,31 @@ bundle: clients
 mode: default
 content:
   field_client_logo:
-    weight: 101
+    type: image
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 101
     region: content
   field_client_web_url:
-    weight: 102
+    type: link
     label: above
     settings:
       trim_length: 80
-      target: _blank
       url_only: false
       url_plain: false
       rel: '0'
+      target: _blank
     third_party_settings: {  }
-    type: link
+    weight: 102
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden: {  }

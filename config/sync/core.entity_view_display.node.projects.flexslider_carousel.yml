@@ -27,8 +27,6 @@ mode: flexslider_carousel
 content:
   field_hero_image:
     type: flexslider_responsive
-    weight: 0
-    region: content
     label: hidden
     settings:
       optionset: flexslider_carousel
@@ -38,6 +36,8 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
+    weight: 0
+    region: content
 hidden:
   body: true
   field_featured_image: true

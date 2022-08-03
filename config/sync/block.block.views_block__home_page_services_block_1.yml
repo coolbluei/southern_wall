@@ -18,13 +18,13 @@ plugin: 'views_block:home_page_services-block_1'
 settings:
   id: 'views_block:home_page_services-block_1'
   label: Services
-  provider: views
   label_display: '0'
+  provider: views
   views_label: Services
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

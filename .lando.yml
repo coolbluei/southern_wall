@@ -5,7 +5,15 @@ config:
   via: nginx
   webroot: web
   xdebug: true
+  config:
+    php: lando.php.ini
 services:
+  appserver:
+    build:
+      - composer install
+    overrides:
+      environment:
+        DRUSH_OPTIONS_URI: "https://sws.lndo.site"
   pma:
     type: phpmyadmin
   node:
@@ -19,3 +27,5 @@ tooling:
     service: 'node'
   gulp:
     service: 'node'
+    cmd:
+      - 'cd /app/web/themes/custom/southernwall && npx gulp'
