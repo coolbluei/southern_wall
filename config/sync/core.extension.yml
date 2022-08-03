@@ -89,7 +89,6 @@ module:
   menu_link_content: 1
   pathauto: 1
   webform_bootstrap: 1
-  nodeorder: 5
   views: 10
   paragraphs: 11
   standard: 1000
