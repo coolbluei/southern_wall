@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.2",
+        "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.0",
         "drupal/address": "^1.7",
         "drupal/admin_toolbar": "^3.0",
@@ -27,9 +27,7 @@
         "drupal/bootstrap_layouts": "^5.2",
         "drupal/bxslider": "^1.0",
         "drupal/config_direct_save": "^1.0",
-        "drupal/console": "^1.9",
-        "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-project-message": "^8.8",
+        "drupal/core-composer-scaffold": "^9.0",
         "drupal/core-recommended": "^9.0",
         "drupal/ds": "^3.12",
         "drupal/editor_advanced_link": "^1.8",
@@ -62,8 +60,7 @@
         "drupal/weight": "^3.3",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~10.4",
-        "platformsh/config-reader": "^2.4",
-        "rvtraveller/qs-composer-installer": "^1.1"
+        "platformsh/config-reader": "^2.4"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -71,7 +68,15 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/console-extend-plugin": true,
+            "rvtraveller/qs-composer-installer": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
@@ -103,27 +108,6 @@
             ],
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
-            ]
-        },
-        "drupal-core-project-message": {
-            "include-keys": [
-                "homepage",
-                "support"
-            ],
-            "post-create-project-cmd-message": [
-                "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
-                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
-                "<bg=blue;fg=white>                                                         </>",
-                "",
-                "<bg=yellow;fg=black>Next steps</>:",
-                "  * Install the site: https://www.drupal.org/docs/8/install",
-                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-                "  * Get support: https://www.drupal.org/support",
-                "  * Get involved with the Drupal community:",
-                "      https://www.drupal.org/getting-involved",
-                "  * Remove the plugin that prints this message:",
-                "      composer remove drupal/core-project-message"
             ]
         }
     }
