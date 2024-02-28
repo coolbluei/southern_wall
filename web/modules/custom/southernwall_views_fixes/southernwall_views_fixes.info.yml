@@ -1,5 +1,5 @@
 name: Southernwall views fixes
 type: module
 description: Fixes bugs in d8 views
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: Southernwall
