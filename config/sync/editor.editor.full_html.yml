@@ -1,4 +1,4 @@
-uuid: b5755f2f-2290-410a-b016-e1ee8d9125be
+uuid: 91fa1d9a-f2b8-4469-b335-6ecb1d867c90
 langcode: en
 status: true
 dependencies:
@@ -24,6 +24,7 @@ settings:
       - numberedList
       - '|'
       - drupalInsertImage
+      - imce_link
       - '|'
       - heading
       - codeBlock
@@ -54,6 +55,14 @@ settings:
         - justify
     ckeditor5_imageResize:
       allow_resize: true
+    editor_advanced_link_link:
+      enabled_attributes:
+        - aria-label
+        - class
+        - id
+        - rel
+        - target
+        - title
 image_upload:
   status: true
   scheme: public
