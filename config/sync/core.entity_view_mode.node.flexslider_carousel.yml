@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.flexslider_carousel
 label: 'Flexslider carousel'
+description: ''
 targetEntityType: node
 cache: true
