@@ -6,3 +6,4 @@ name: Position
 vid: position
 description: 'Position of team members'
 weight: 0
+new_revision: false

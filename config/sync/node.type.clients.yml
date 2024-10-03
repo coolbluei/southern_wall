@@ -11,7 +11,7 @@ third_party_settings:
 name: Clients
 type: clients
 description: 'Clients associated with SWS.'
-help: ''
+help: null
 new_revision: false
 preview_mode: 0
 display_submitted: false

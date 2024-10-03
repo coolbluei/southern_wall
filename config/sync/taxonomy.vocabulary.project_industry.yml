@@ -4,5 +4,6 @@ status: true
 dependencies: {  }
 name: 'Project Industry'
 vid: project_industry
-description: ''
+description: null
 weight: 0
+new_revision: false

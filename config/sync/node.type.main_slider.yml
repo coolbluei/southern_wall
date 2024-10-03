@@ -11,7 +11,7 @@ third_party_settings:
 name: 'Home Slider'
 type: main_slider
 description: 'This content type will render slider on home page'
-help: ''
+help: null
 new_revision: false
 preview_mode: 1
 display_submitted: false

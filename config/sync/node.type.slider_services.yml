@@ -12,7 +12,7 @@ third_party_settings:
 name: 'Slider services'
 type: slider_services
 description: 'This content type will render slider on Services listing page'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: true
