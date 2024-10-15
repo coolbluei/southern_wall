@@ -57,7 +57,6 @@ module:
   menu_ui: 0
   metatag: 0
   metatag_views: 0
-  module_filter: 0
   mysql: 0
   node: 0
   options: 0
@@ -74,7 +73,6 @@ module:
   text: 0
   token: 0
   toolbar: 0
-  tour: 0
   tvi: 0
   twig_tweak: 0
   update: 0
